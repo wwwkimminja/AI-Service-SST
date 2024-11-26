@@ -11,16 +11,15 @@ import Start from './pages/start/Start';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <BrowserRouter>
-        <Routes>
-            <Route path='/' element={<App />} />
-            <Route path='/start' element={<Start />} />
-            <Route path='/order' element={<Order />} />
-            <Route path='/payment-success' element={<PaymentSuccess />} />
-            <Route path='/payment-fail' element={<PaymentFail />} />
-            <Route path='/status' element={<Status />} />
-            <Route path='/see' element={<See />} />
-        </Routes>
-    </BrowserRouter>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/start" element={<Start />} />
+      <Route path="/order" element={<Order />} />
+      <Route path="/payment-success" element={<PaymentSuccess />} />
+      <Route path="/payment-fail" element={<PaymentFail />} />
+      <Route path="/status" element={<Status />} />
+      <Route path="/see" element={<See />} />
+    </Routes>
+  </BrowserRouter>
 );
-

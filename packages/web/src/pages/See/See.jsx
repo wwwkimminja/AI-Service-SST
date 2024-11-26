@@ -1,6 +1,3 @@
-
 export default function See() {
-  return (
-    <div>See</div>
-  )
+  return <div>See</div>;
 }

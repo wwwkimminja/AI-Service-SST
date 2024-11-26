@@ -1,6 +1,3 @@
-
 export default function PaymentSuccess() {
-  return (
-    <div>PaymentSuccess</div>
-  )
+  return <div>PaymentSuccess</div>;
 }

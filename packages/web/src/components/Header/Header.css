@@ -1,20 +1,19 @@
-
-.heading{
+.heading {
   font-weight: 600;
   font-size: 3rem;
-  margin:10px 0;
+  margin: 10px 0;
 }
-.subHeading{
+.subHeading {
   font-weight: 500;
   font-size: 2rem;
   line-height: 150%;
 }
 
-@media only screen and (max-width: 768px){
-  .heading{
+@media only screen and (max-width: 768px) {
+  .heading {
     font-size: 2.5rem;
   }
-  .subHeading{
+  .subHeading {
     font-size: 1.5rem;
   }
 }
