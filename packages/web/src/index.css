@@ -6,7 +6,8 @@ body {
   background-color: #fefcfb;
 }
 
-button {
+button,
+.button {
   background: linear-gradient(90deg, #efcaaa, #b5d5ef);
   border: none;
   padding: 0.8rem 2.2rem;
@@ -18,12 +19,18 @@ button {
   transition: all 2s ease-in-out;
 }
 
-button:hover {
+button:hover,
+.button:hover {
   cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
-  button {
+  .App {
+    padding: 30px 0;
+  }
+
+  button,
+  .button {
     padding: 0.6rem 2rem;
     font-size: 1.5rem;
   }
@@ -38,8 +45,15 @@ button:hover {
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-  .App {
-    padding: 30px 0;
-  }
+.container {
+  background-color: #fff;
+  min-height: 670px;
+  width: 70%;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
