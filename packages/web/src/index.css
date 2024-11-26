@@ -28,3 +28,18 @@ button:hover {
     font-size: 1.5rem;
   }
 }
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 30px 0;
+  }
+}
