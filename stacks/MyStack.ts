@@ -1,4 +1,4 @@
-import { StackContext, Api } from 'sst/constructs';
+import { StackContext, Api ,StaticSite} from 'sst/constructs';
 
 export function API({ stack }: StackContext) {
     const api = new Api(stack, 'raymong_lecture', {
@@ -14,7 +14,18 @@ export function API({ stack }: StackContext) {
         },
     });
 
+    const site = new StaticSite(stack,'Site',{
+        path:'packages/web',
+        environment:{
+            VITE_API_URL:api.customDomainUrl || api.url,
+            VITE_APP_URL:'http://localhost:5173',
+        },
+        buildOutput:'dist',
+        buildCommand:'npm run build',
+    })
+
     stack.addOutputs({
-        ApiEndpoint: api.url,
+        ApiEndpoint: api.customDomainUrl || api.url,
+        SiteUrl:site.customDomainUrl||site.url,
     });
 }
