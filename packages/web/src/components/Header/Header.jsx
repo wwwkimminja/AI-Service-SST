@@ -12,7 +12,7 @@ export default function Header() {
         <>
           Let&apos;s start!
           <br />
-          Please upload 8 to 10 pictures of dogs or cats
+          Please upload 8 to 20 pictures of dogs or cats
         </>
       ),
     };
